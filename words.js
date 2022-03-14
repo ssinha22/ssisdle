@@ -25,11 +25,4 @@ export const WORDS = [
     'physics',
     'biology',
     'chemistry',
-    'those',
-    'never',
-    'under',
-    'might',
-    'while',
-    'house',
-    'world',
   ]
