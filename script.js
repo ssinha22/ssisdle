@@ -1,7 +1,7 @@
-import { WORDS } from "./words.js";
+import { TEACHERS } from "./words.js";
 let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
 let wordLength = rightGuessString.length
-const NUMBER_OF_GUESSES = wordLength;
+const NUMBER_OF_GUESSES = wordLength/2 +3;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
@@ -68,7 +68,7 @@ function insertLetter (pressedKey) {
 }
 
 function deleteLetter () {
-    let row = document.getElementsByClassName("letter-row")[NUMBER_OF_GUESSES - guessesRemaining]
+    let row = document.getElementsByClassName("letter-row")[wordLength - guessesRemaining]
     let box = row.children[nextLetter - 1]
     box.textContent = ""
     box.classList.remove("filled-box")
@@ -91,7 +91,7 @@ function checkGuess () {
     }
 
 
-    for (let i = 0; i < NUMBER_OF_GUESSES; i++) {
+    for (let i = 0; i < wordLength; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
