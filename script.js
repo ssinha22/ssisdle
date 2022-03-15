@@ -1,5 +1,5 @@
 import { TEACHERS } from "./words.js";
-let rightGuessString = TEACHERS[Math.floor(Math.random() * TEACHERS.length)]
+let rightGuessString = TEACHERS[Math.floor(Math.random() * TEACHERS.length)] 
 let wordLength = rightGuessString.length
 const words = wordLength/2 +3;
 let guessesRemaining = NUMBER_OF_GUESSES;
