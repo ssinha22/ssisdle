@@ -34,5 +34,41 @@ export const WORDS = [
     'larson',
     'matheson',
     'robidoux',
-    
+  ]
+  export const GENERAL = [
+      'ssis',
+      'saigon',
+      'south',
+      'school',
+      'international',
+  ]
+
+  export const SUBJECTS = [
+    'math',
+    'english',
+    'econ',
+    'psych',
+    'ap',
+    'ib',
+    'ia',
+    'ee',
+    'mandarin',
+    'spanish',
+    'art',
+    'music',
+    'theatre',
+    'physics',
+    'biology',
+    'chemistry',
+  ]
+  export const TEACHERS = [
+    'kreier',
+    'weinberg',
+    'keller',
+    'bosko',
+    'ede',
+    'morris',
+    'larson',
+    'matheson',
+    'robidoux',
   ]
