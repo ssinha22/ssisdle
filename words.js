@@ -25,4 +25,14 @@ export const WORDS = [
     'physics',
     'biology',
     'chemistry',
+    'kreier',
+    'weinberg',
+    'keller',
+    'bosko',
+    'ede',
+    'morris',
+    'larson',
+    'matheson',
+    'robidoux',
+    
   ]
