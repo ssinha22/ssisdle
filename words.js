@@ -109,6 +109,9 @@ export const WORDS = [
       'redfern',
       'pathak',
       'sorobey',
-      'swiercinsky',   
+      'swiercinsky',
+      'lo',
+      'gomez',
+      
       
   ]
