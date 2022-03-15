@@ -68,7 +68,7 @@ function insertLetter (pressedKey) {
 }
 
 function deleteLetter () {
-    let row = document.getElementsByClassName("letter-row")[wordLength - guessesRemaining]
+    let row = document.getElementsByClassName("letter-row")[NUMBER_OF_GUESSES - guessesRemaining]
     let box = row.children[nextLetter - 1]
     box.textContent = ""
     box.classList.remove("filled-box")
