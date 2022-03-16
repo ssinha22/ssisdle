@@ -5,8 +5,9 @@ const oneDay = 24 * 60 * 60 * 1000;
 const firstDate = new Date(2022, 3, 16);
 let secondDate = new Date();
 let day = Math.round((secondDate - firstDate) / oneDay);
-
+console.log(day)
 let rightGuessString = TEACHERS[day]
+console.log(rightGuessString)
 let wordLength = rightGuessString.length
 const NUMBER_OF_GUESSES = wordLength/2 +3;
 let guessesRemaining = NUMBER_OF_GUESSES;
