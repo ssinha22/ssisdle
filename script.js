@@ -97,7 +97,7 @@ function checkGuess () {
         return
     }
     
-    if ((!TEACHERS.includes(guessString)) and (guessesRemaining < NUMBER_OF_GUESSES)) {
+    if (!TEACHERS.includes(guessString)) {
         alert("After the first guess all guesses must be highschool teacher surnames!")
         return
     }
