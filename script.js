@@ -2,9 +2,9 @@ import { TEACHERS } from "./words.js";
 //import{ SELECTOR } from "./words.js";
 
 const oneDay = 24 * 60 * 60 * 1000;
-const firstDate = new Date(2022, 3, 16);
+const firstDate = new Date(2022, 2, 16);
 let secondDate = new Date();
-let day = Math.round((secondDate.getTime()- firstDate.getTime()) / oneDay);
+let day = Math.round((secondDate.getTime()- firstDate.getTime()) / oneDay) - 1;
 console.log(day)
 let rightGuessString = TEACHERS[day]
 console.log(rightGuessString)
