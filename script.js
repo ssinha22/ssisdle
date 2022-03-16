@@ -2,7 +2,7 @@ import { TEACHERS } from "./words.js";
 //import{ SELECTOR } from "./words.js";
 
 const oneDay = 24 * 60 * 60 * 1000;
-const firstDate = new Date(2008, 1, 12);
+const firstDate = new Date(2022, 3, 16);
 let secondDate = new Date();
 let day = Math.round((secondDate - firstDate) / oneDay);
 
