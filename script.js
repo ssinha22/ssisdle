@@ -1,13 +1,5 @@
 import { TEACHERS } from "./words.js";
-//import{ SELECTOR } from "./words.js";
-
-const oneDay = 24 * 60 * 60 * 1000;
-const firstDate = new Date(2022, 2, 16);
-let secondDate = new Date();
-let day = Math.round((secondDate.getTime()- firstDate.getTime()) / oneDay) - 1;
-console.log(day)
-let rightGuessString = TEACHERS[day]
-console.log(rightGuessString)
+let rightGuessString = TEACHERS[Math.floor(Math.random() * TEACHERS.length)]
 let wordLength = rightGuessString.length
 const NUMBER_OF_GUESSES = wordLength/2 +3;
 let guessesRemaining = NUMBER_OF_GUESSES;
@@ -95,11 +87,6 @@ function checkGuess () {
 
     if (guessString.length<= 0) {
         alert("Not enough letters!")
-        return
-    }
-    
-    if (!TEACHERS.includes(guessString)) {
-        alert("After the first guess all guesses must be highschool teacher surnames!")
         return
     }
 
