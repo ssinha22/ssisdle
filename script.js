@@ -99,7 +99,7 @@ function checkGuess () {
     }
     
     if (!TEACHERS.includes(guessString)) {
-        alert("After the first guess all guesses must be highschool teacher surnames!")
+        alert("Guesses must be a highshcool teacher surname!(taken from HS faculty directory")
         return
     }
 
@@ -137,7 +137,6 @@ function checkGuess () {
     }
 
     if (guessString === rightGuessString) {
-        alert("You guessed right! Game over!")
         guessesRemaining = 0
         return
     } else {
